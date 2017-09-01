@@ -1,7 +1,7 @@
 #requires -Version 1
 @{
     ModuleToProcess   = 'PowerUpSQL.psm1'
-    ModuleVersion     = '1.0.0.76'
+    ModuleVersion     = '1.83.98'
     GUID              = 'dd1fe106-2226-4869-9363-44469e930a4a'
     Author            = 'Scott Sutherland'
     Copyright         = 'BSD 3-Clause'
@@ -11,6 +11,7 @@
         'Create-SQLFileXpDll', 
         'Create-SQLFileCLRDll', 
         'Get-SQLAgentJob',
+        'Get-SQLAssemblyFile',
         'Get-SQLAuditDatabaseSpec', 
         'Get-SQLAuditServerSpec', 
         'Get-SQLColumn', 
@@ -55,7 +56,8 @@
         'Get-SQLServiceAccount', 
         'Get-SQLServiceLocal', 
         'Get-SQLSession', 
-        'Get-SQLStoredProcedure', 
+        'Get-SQLStoredProcedure',
+        'Get-SQLStoredProcedureCLR',        
         'Get-SQLStoredProcedureSQLi',        
         'Get-SQLStoredProcedureAutoExec',          
         'Get-SQLSysadminCheck', 
@@ -85,6 +87,9 @@
         'Invoke-SQLImpersonateServiceCmd',
         'Invoke-SQLOSCmd',
         'Invoke-SQLOSCmdCLR',
+        'Invoke-SQLOSCmdCOle',        
+        'Invoke-SQLOSCmdR',  
+        'Invoke-SQLOSCmdAgentJob',
         'Invoke-TokenManipulation'
     )
     FileList          = 'PowerUpSQL.psm1', 'PowerUpSQL.ps1', 'README.md'
