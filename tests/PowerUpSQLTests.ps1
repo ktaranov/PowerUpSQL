@@ -13,11 +13,21 @@
 ######################################################
 
 <#
+Get-SQLDomainObject
+Get-SQLDomainUser
+Get-SQLOleDbProvder 
 Get-SQLInstanceDomain              
 Get-SQLInstanceFile                
 Get-SQLInstanceLocal               
 Get-SQLInstanceScanUDP             
 Get-SQLInstanceScanUDPThreaded  
+Invoke-SQLOSCmdCLR
+Invoke-SQLOSCmdAgentJob
+Invoke-SQLOSCmdPython
+Invoke-SQLOSCmdR
+Invoke-SQLOSCmdOle
+Create-SQLFileCLRDll
+Get-SQLAssemblyFile
 #>
 
 #endregion
@@ -244,6 +254,11 @@ Describe "Get-SQLConnectionTestThreaded" {
 #region           Common Function Tests
 #
 ######################################################
+
+# Get-SQLAgentJob
+# Get-SQLServerLinkCrawl
+# Get-SQLServerLinkData
+# Get-SQLServerLinkQuery
 
 # Get-SQLTriggerDml  
 Describe "Get-SQLTriggerDml  " {
@@ -1302,6 +1317,7 @@ Create-SQLFileXpDll
 Get-SQLStoredProcedureSQLi
 Get-SQLServerLoginDefaultPw
 Get-SQLStoredProcedureAutoExec
+Invoke-SQLImpersonateServiceCmd
 #>
 
 # Get-SQLFuzzDatabaseName
