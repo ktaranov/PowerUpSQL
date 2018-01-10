@@ -13,12 +13,19 @@
 ######################################################
 
 <#
+Get-SQLDomainObject
+Get-SQLDomainUser
+Get-SQLOleDbProvder 
 Get-SQLInstanceDomain              
 Get-SQLInstanceFile                
 Get-SQLInstanceLocal               
 Get-SQLInstanceScanUDP             
 Get-SQLInstanceScanUDPThreaded  
 Invoke-SQLOSCmdCLR
+Invoke-SQLOSCmdAgentJob
+Invoke-SQLOSCmdPython
+Invoke-SQLOSCmdR
+Invoke-SQLOSCmdOle
 Create-SQLFileCLRDll
 Get-SQLAssemblyFile
 #>

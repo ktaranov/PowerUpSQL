@@ -1,7 +1,7 @@
 #requires -Version 1
 @{
     ModuleToProcess   = 'PowerUpSQL.psm1'
-    ModuleVersion     = '1.83.98'
+    ModuleVersion     = '1.91.118'
     GUID              = 'dd1fe106-2226-4869-9363-44469e930a4a'
     Author            = 'Scott Sutherland'
     Copyright         = 'BSD 3-Clause'
@@ -26,6 +26,12 @@
         'Get-SQLDatabaseSchema', 
         'Get-SQLDatabaseThreaded', 
         'Get-SQLDatabaseUser', 
+        'Get-SQLDomainObject',
+        'Get-SQLDomainComputer',
+        'Get-SQLDomainUser', 
+        'Get-SQLDomainGroup',
+        'Get-SQLDomainOu',
+        'Get-SQLDomainAccountPolicy',
         'Get-SQLFuzzDatabaseName', 
         'Get-SQLFuzzDomainAccount', 
         'Get-SQLFuzzObjectName', 
@@ -36,6 +42,7 @@
         'Get-SQLInstanceScanUDP', 
         'Get-SQLInstanceScanUDPThreaded', 
         'Get-SQLLocalAdminCheck',
+        'Get-SQLOleDbProvder',
         'Get-SQLQuery', 
         'Get-SQLQueryThreaded', 
         'Get-SQLRecoverPwAutoLogon',
@@ -50,6 +57,7 @@
         'Get-SQLServerLogin', 
         'Get-SQLServerLoginDefaultPw', 
         'Get-SQLServerPasswordHash',
+        'Get-SQLServerPolicy',
         'Get-SQLServerPriv', 
         'Get-SQLServerRole', 
         'Get-SQLServerRoleMember', 
@@ -60,6 +68,7 @@
         'Get-SQLStoredProcedureCLR',        
         'Get-SQLStoredProcedureSQLi',        
         'Get-SQLStoredProcedureAutoExec',          
+        'Get-SQLStoredProcedureXp', 
         'Get-SQLSysadminCheck', 
         'Get-SQLTable', 
         'Get-SQLTriggerDdl', 
@@ -85,9 +94,11 @@
         'Invoke-SQLEscalatePriv', 
         'Invoke-SQLImpersonateService',
         'Invoke-SQLImpersonateServiceCmd',
+        'Invoke-SQLUncPathInjection',
         'Invoke-SQLOSCmd',
         'Invoke-SQLOSCmdCLR',
-        'Invoke-SQLOSCmdCOle',        
+        'Invoke-SQLOSCmdCOle', 
+        'Invoke-SQLOSCmdPython',       
         'Invoke-SQLOSCmdR',  
         'Invoke-SQLOSCmdAgentJob',
         'Invoke-TokenManipulation'
